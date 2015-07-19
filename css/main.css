@@ -16,6 +16,10 @@ body{
 	width: 45px;
 	height: 50px;
 	left:46%;
-	transition: left 1.5s ease;
+	-webkit-transition: left 1.5s ease;
+    -moz-transition: left 1.5s ease;
+    -ms-transition: left 1.5s ease;
+    -o-transition: left 1.5s ease;
+    transition: left 1.5s ease;
 	z-index: 100;
 }
