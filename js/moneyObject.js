@@ -15,7 +15,17 @@ moneyObj.prototype.updata =function(){
 	if(this.y>H){
 		this.x=Math.random()*W;
 		this.y=-30;
-		PositionY--;
+	}
+}
+
+moneyObj.prototype.checkCat =function(){
+	if(this.y>H-85 && this.y<H){
+		if(this.x-catLeft<45 && this.x-catLeft>-66){
+			score+=1;
+			drawScore();
+			this.x=Math.random()*W;
+			this.y=-30;
+		}
 	}
 }
 
@@ -26,6 +36,7 @@ moneyObj.prototype.draw =function(){
 function drawS(){
 	for(var i=0;i<num;i++){
 		moneys[i].updata();
+		moneys[i].checkCat();
 		moneys[i].draw();
 	}
 }
