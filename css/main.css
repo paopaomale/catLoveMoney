@@ -1,0 +1,21 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body{
+  overflow-y: hidden;
+}
+.catImg{
+	position: fixed;
+	bottom: 0px;
+	background-image: url('../img/cat.png');
+	background-size: 100% 100%;
+	width: 45px;
+	height: 50px;
+	left:46%;
+	transition: left 1.5s ease .2s;
+	z-index: 100;
+}
