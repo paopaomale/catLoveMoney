@@ -16,6 +16,6 @@ body{
 	width: 45px;
 	height: 50px;
 	left:46%;
-	transition: left 1.5s ease .2s;
+	transition: left 1.5s ease;
 	z-index: 100;
 }
