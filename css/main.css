@@ -13,8 +13,8 @@ body{
 	bottom: 0px;
 	background-image: url('../img/cat.png');
 	background-size: 100% 100%;
-	width: 45px;
-	height: 50px;
+	width: 37px;
+	height: 48px;
 	left:46%;
 	-webkit-transition: left 1.5s ease;
     -moz-transition: left 1.5s ease;

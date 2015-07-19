@@ -14,17 +14,17 @@ moneyObj.prototype.updata =function(){
 	this.y += this.ySpeed;
 	if(this.y>H){
 		this.x=Math.random()*W;
-		this.y=-30;
+		this.y=-imgMoneyH;
 	}
 }
 
 moneyObj.prototype.checkCat =function(){
-	if(this.y>H-85 && this.y<H){
-		if(this.x-catLeft<45 && this.x-catLeft>-66){
+	if(this.y>H-catImgH-imgMoneyH && this.y<H){
+		if(this.x-catLeft<catImgW && this.x-catLeft>-imgMoneyW){
 			score+=1;
 			drawScore();
 			this.x=Math.random()*W;
-			this.y=-30;
+			this.y=-imgMoneyH;
 		}
 	}
 }
