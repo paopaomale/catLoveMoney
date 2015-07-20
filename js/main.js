@@ -13,7 +13,8 @@ var can,
 	catLeft,
 	score = 0,
 	lastTime,
-	renderTime;
+	renderTime,
+	catDom=$('.catImg');
 
 $(function init(){
 	can= document.getElementById("canvas");
@@ -54,16 +55,15 @@ function gameloop(){
 	var now =Date.now();
 	renderTime = now-lastTime;
 	lastTime = now;
+	catLeft = catDom.position().left;
 	// drawBackground();
 	ctx.clearRect(0,0,W,H);
-		drawScore();
-		catLeft = $('.catImg').position().left;
-		drawS();
+	drawScore();
+	drawS();
 	
 }
 $('body').click(function(e) {
-	// var moveLeft = e.clientX-$('.catImg').position().left;
-	$('.catImg').css({'left':e.clientX});
+	catDom.css({'left':e.clientX});
 
 });
 

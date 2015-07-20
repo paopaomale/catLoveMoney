@@ -16,10 +16,14 @@ body{
 	width: 37px;
 	height: 48px;
 	left:46%;
-	-webkit-transition: left 1.5s ease;
-    -moz-transition: left 1.5s ease;
-    -ms-transition: left 1.5s ease;
-    -o-transition: left 1.5s ease;
-    transition: left 1.5s ease;
+	-webkit-transition: left 1s ease;
+    -moz-transition: left 1s ease;
+    -ms-transition: left 1s ease;
+    -o-transition: left 1s ease;
+    transition: left 1s ease;
+    -webkit-transform: translate3d(0, 0, 0); 
+	-moz-transform: translate3d(0, 0, 0); 
+	-ms-transform: translate3d(0, 0, 0); 
+	transform: translate3d(0, 0, 0); 
 	z-index: 100;
 }
