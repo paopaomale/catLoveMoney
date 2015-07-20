@@ -48,7 +48,7 @@ function drawScore(){
 
 function gameloop(){
 	// window.requestAnimationFrame(gameloop);
-	requestAnimationFrame(gameloop);
+	RequestAnimationFrame(gameloop);
 	// drawBackground();
 	ctx.clearRect(0,0,W,H);
 	drawScore();
@@ -64,7 +64,7 @@ $('body').click(function(e) {
 
 
 //浏览器兼容处理  
-var requestAnimationFrame = (function(){  
+var RequestAnimationFrame = (function(){  
 return window.requestAnimationFrame ||  
 		window.webkitRequestAnimationFrame ||  
 		window.mozRequestAnimationFrame ||  
