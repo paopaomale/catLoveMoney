@@ -2,12 +2,12 @@
 	margin:0px;
 	padding:0px;
 }
-/*body::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
 }
 body{
   overflow-y: hidden;
-}*/
+}
 #canvas{
 	position: fixed;
 }
