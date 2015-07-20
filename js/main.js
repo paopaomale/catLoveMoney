@@ -13,8 +13,7 @@ var can,
 	catLeft,
 	score = 0,
 	lastTime,
-	renderTime,
-	timer=0;
+	renderTime;
 
 $(function init(){
 	can= document.getElementById("canvas");
