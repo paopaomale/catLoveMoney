@@ -47,7 +47,8 @@ function drawScore(){
 }
 
 function gameloop(){
-	window.requestAnimationFrame(gameloop);
+	// window.requestAnimationFrame(gameloop);
+	requestAnimationFrame(gameloop);
 	// drawBackground();
 	ctx.clearRect(0,0,W,H);
 	drawScore();
@@ -63,12 +64,12 @@ $('body').click(function(e) {
 
 
 //浏览器兼容处理  
-// var requestAnimationFrame = (function(){  
-// return window.requestAnimationFrame ||  
-//		window.webkitRequestAnimationFrame ||  
-//		window.mozRequestAnimationFrame ||  
-//		window.oRequestAnimationFrame ||  
-//		window.msRequestAnimationFrame || function(callback) {  
-//		window.setTimeout(callback, 1000 / 60);  
-// };  
-// })();
+var requestAnimationFrame = (function(){  
+return window.requestAnimationFrame ||  
+		window.webkitRequestAnimationFrame ||  
+		window.mozRequestAnimationFrame ||  
+		window.oRequestAnimationFrame ||  
+		window.msRequestAnimationFrame || function(callback) {  
+		window.setTimeout(callback, 1000 / 60);  
+};  
+})();
