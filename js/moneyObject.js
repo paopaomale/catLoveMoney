@@ -43,6 +43,8 @@ function drawS(){
 	for(var i=0;i<num;i++){
 		moneys[i].updata();
 		moneys[i].checkCat();
+	}
+	for(var i=0;i<num;i++){
 		moneys[i].draw();
 	}
 }
