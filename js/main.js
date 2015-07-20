@@ -52,9 +52,9 @@ function drawScore(){
 
 function gameloop(){
 	RequestAnimationFrame(gameloop);
-	var now =Date.now();
-	renderTime = now-lastTime;
-	lastTime = now;
+	// var now =Date.now();
+	// renderTime = now-lastTime;
+	// lastTime = now;
 	catLeft = catDom.position().left;
 	// drawBackground();
 	ctx.clearRect(0,0,W,H);
