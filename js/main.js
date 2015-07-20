@@ -11,7 +11,9 @@ var can,
 	imgMoney=new Image(),
 	PositionY= 0,
 	catLeft,
-	score = 0;
+	score = 0,
+	lastTime,
+	renderTime;
 
 $(function init(){
 	can= document.getElementById("canvas");
@@ -32,6 +34,7 @@ $(function init(){
 		PositionY++;
 		moneys[i].init();
 	}
+	lastTime = Date.now();
 	gameloop();
 
 })
@@ -47,10 +50,15 @@ function drawScore(){
 }
 
 function gameloop(){
-	// window.requestAnimationFrame(gameloop);
 	RequestAnimationFrame(gameloop);
+	var now =Date.now();
+	renderTime = now-lastTime;
+	lastTime = now;
 	// drawBackground();
 	ctx.clearRect(0,0,W,H);
+	ctx.fillStyle="red";
+	ctx.font="20px Arial";
+	ctx.fillText(renderTime,150,150);
 	drawScore();
 	catLeft = $('.catImg').position().left;
 	drawS();
