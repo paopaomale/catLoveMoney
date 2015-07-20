@@ -2,7 +2,7 @@ var moneyObj = function(){
 	this.x;
 	this.y;
 
-	this.ySpeed=(Math.random()+1)*3;
+	this.ySpeed=(Math.random()+1)*5;
 	this.timer = 0;
 }
 
