@@ -3,6 +3,7 @@ var moneyObj = function(){
 	this.y;
 
 	this.ySpeed=(Math.random()+1)*2;
+	this.timer = 0;
 }
 
 moneyObj.prototype.init =function(){
@@ -11,11 +12,16 @@ moneyObj.prototype.init =function(){
 }
 
 moneyObj.prototype.updata =function(){
-	this.y += this.ySpeed;
-	if(this.y>H){
-		this.x=Math.random()*W;
-		this.y=-imgMoneyH;
+	this.timer +=renderTime;
+	if(this.timer>16){
+		this.y += this.ySpeed;
+		if(this.y>H){
+			this.x=Math.random()*W;
+			this.y=-imgMoneyH;
+		}
+		this.timer =0;
 	}
+
 }
 
 moneyObj.prototype.checkCat =function(){
