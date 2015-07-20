@@ -25,10 +25,10 @@ moneyObj.prototype.updata =function(){
 }
 
 moneyObj.prototype.checkCat =function(){
-	if(this.y>H-catImgH-imgMoneyH && this.y<H){
+	if(this.y>H-70 && this.y<H){//catImgH+imgMoneyH=80
 		if(this.x-catLeft<catImgW && this.x-catLeft>-imgMoneyW){
 			score+=1;
-			drawScore();
+			// drawScore();
 			this.x=Math.random()*W;
 			this.y=-imgMoneyH;
 		}
