@@ -25,7 +25,8 @@ $(function init(){
 	can.width = W;
 	can.height = H;
 	can.style.background='#FF9588';
-	num = parseInt(W/100*2.5);
+	// num = parseInt(W/100*2.5);
+	num = 1;
 
 	// drawBackground();
 	imgMoney.src='img/money.png';
@@ -58,9 +59,9 @@ function gameloop(){
 	catLeft = catDom.position().left;
 	// drawBackground();
 	ctx.clearRect(0,0,W,H);
-	drawScore();
 	drawS();
-	
+	drawScore();
+
 }
 $('body').click(function(e) {
 	catDom.css({'left':e.clientX});
