@@ -25,8 +25,7 @@ $(function init(){
 	can.width = W;
 	can.height = H;
 	can.style.background='#FF9588';
-	// num = parseInt(W/100*2.5);
-	num = 1;
+	num = parseInt(W/100*2.5);
 
 	// drawBackground();
 	imgMoney.src='img/money.png';
